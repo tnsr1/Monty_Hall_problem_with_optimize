@@ -5,19 +5,19 @@
 
 CLEAR ALL 
 LOCAL lni, lnw, lnv, lnTrue, lnTryings, lnQty
-*lni - переменная цикла
-*lnw - номер двери, за которой приз
-*lnv - мой выбор
-*lnTrue - количество угадываний
-*lnTryings - количество попыток
-*lnQty - количество дверей
+*lni - РїРµСЂРµРјРµРЅРЅР°СЏ С†РёРєР»Р°
+*lnw - РЅРѕРјРµСЂ РґРІРµСЂРё, Р·Р° РєРѕС‚РѕСЂРѕР№ РїСЂРёР·
+*lnv - РјРѕР№ РІС‹Р±РѕСЂ
+*lnTrue - РєРѕР»РёС‡РµСЃС‚РІРѕ СѓРіР°РґС‹РІР°РЅРёР№
+*lnTryings - РєРѕР»РёС‡РµСЃС‚РІРѕ РїРѕРїС‹С‚РѕРє
+*lnQty - РєРѕР»РёС‡РµСЃС‚РІРѕ РґРІРµСЂРµР№
 
 lnQty = 3
 LOCAL ARRAY arr1(lnQty)
 lnTrue = 0
 lnTryings = 1000000
 FOR lni = 1 TO lnTryings
-    arr1=0 && очищаем массив
+    arr1=0 && Г®Г·ГЁГ№Г ГҐГ¬ Г¬Г Г±Г±ГЁГў
     lnw = FLOOR(RAND()*lnQty)+1
     arr1[lnw] = 1
     lnv = FLOOR(RAND()*lnQty)+1

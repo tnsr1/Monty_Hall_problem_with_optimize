@@ -17,7 +17,7 @@ LOCAL ARRAY arr1(lnQty)
 lnTrue = 0
 lnTryings = 1000000
 FOR lni = 1 TO lnTryings
-    arr1=0 && î÷èùàåì ìàññèâ
+    arr1=0 && очищаем массив
     lnw = FLOOR(RAND()*lnQty)+1
     arr1[lnw] = 1
     lnv = FLOOR(RAND()*lnQty)+1
